@@ -31,11 +31,6 @@ nav ul
 
 }
 
-nav: hoover
-{
-	background-color:yellow ;
-}
-
 .btn 
 {
   border-radius: 10px;
@@ -92,7 +87,7 @@ nav: hoover
     display: flex;
     height: 12px;
     width: 30px;
-  /*  color: #0065FC;*/
+    color: #000000;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     padding-top: 10px;
@@ -132,7 +127,7 @@ nav: hoover
 }
 .filtres-ul  {
     display: flex;
-    border-radius: 56px;
+    border-radius: 55px;
     box-shadow: #F2F2F2;
     
 }
@@ -143,7 +138,7 @@ nav: hoover
     border: 3px solid #F2F2F2;
     border-radius: 35px;
     background-color: white;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     width: auto;
     height: 35px;
@@ -166,7 +161,7 @@ nav: hoover
  	width: 40px;
     text-align: center;
     color: #0065FC;
-    background-color: lightskyblue;
+    background-color: #E1EAFE;
    
     
     
@@ -186,31 +181,12 @@ nav: hoover
     font-weight: 500;
 }
 
-.footer{
-    display: flex;
-    position: relative;
-    height: 200%;
-    background-color: #F2F2F2;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-}
-.footer ul{
-    list-style: none;
-    padding: 0 170px 0 80px;
-}
-
-.footer ul li{
-    margin-top: 10px;
-}
-
 /*section-hebergements*/
 .hebergements{
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    
 
 }
 .hebergementsMarseille{
@@ -219,6 +195,7 @@ nav: hoover
     height: auto;
     width: auto;
     border-radius: 20px;
+    
     
 }
 .hebergementsMarseille h3,h4{
@@ -332,7 +309,7 @@ nav: hoover
     float: right;
 }
 
-/* Activités à Marseille */
+/* Activités Marseille */
 .activites{
     margin-top: 40px;
 }
@@ -397,6 +374,26 @@ nav: hoover
     margin-top: 30px;
 }
 
+.footer{
+    display: flex;
+    position: relative;
+    height: 200%;
+    background-color: #F2F2F2;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.footer ul{
+    list-style: none;
+    padding: 0 170px 0 80px;
+}
+
+.footer ul li{
+    margin-top: 10px;
+}
+
 @media all and (max-width: 980px){
 
 	nav 
@@ -432,7 +429,7 @@ nav: hoover
 		display: flex;
 		flex-flow: row wrap;
 		flex-direction: row;
-		border-radius: 56px;
+		border-radius: 55px;
 		box-shadow: #F2F2F2;
 		
 	}
