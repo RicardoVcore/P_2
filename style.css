@@ -168,16 +168,20 @@ nav ul
 }
 .filtres{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 15px;
     align-items: center;
 }
 .filtres p{
     font-weight: bold;
     font-size: 15px;
+    padding-right: 12px;
 }
 .filtres-ul  {
     display: flex;
-    border-radius: 55px;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-radius: 56px;
    
     
 }
@@ -253,9 +257,7 @@ nav ul
     font-size: 1em;
     margin-top: 20px;
     padding: 20px;
-   padding-left: 60px;
-
-
+    padding-left: 60px;
 }
 .cursorPointer{
     cursor: pointer;
@@ -311,26 +313,30 @@ nav ul
 .hebergementsPopulaires{
     background-color: #F2F2F2;
     height: auto;
-    width: auto;
+    width: 390px;
     border-radius: 20px;
+    padding-bottom: 30px;
 }
 .hebergementsPopulaires h3{
     margin-top: 10px;
     font-size: 1em;
-    padding-left: 40px;
 }
 .infopopulaire{
     display: flex;
     justify-content: space-between;
+    flex-shrink: 1;
     align-items: center;
-    margin-right: 30px;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    padding: 20px;
 }
 .hebergementsPopulairesImages{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 15px;
+    gap: 30px;
 
 }
 .hebergementsPopulairesImages span{
@@ -345,6 +351,7 @@ nav ul
     height: 130px;
     width: 150px;
     object-fit: cover;
+    gap: 30px;
 }
 .box-img-populaires{
     background-color: white;
@@ -367,6 +374,7 @@ nav ul
 /* Activités Marseille */
 .activites{
     margin-top: 40px;
+    justify-content: center;
 }
 
 .activites h3{
@@ -433,7 +441,7 @@ nav ul
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    align-items: center;*/
+    align-items: center;
     position: relative;
     height: 200%;
     background-color: #F2F2F2;
@@ -458,6 +466,8 @@ nav ul
 #footer-content ul li{
     margin-top: 10px;
 }
+
+/*media call*/
 @media all and (max-width: 640px){
 
 	nav 
@@ -519,18 +529,29 @@ nav ul
 		display: flex;
 		flex-flow: row wrap-reverse;
 		flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         
 		
 	
     }
-    
+    .activites{
+        justify-content: center;
+    }
+    .hebergementsMarseille h3,h4{
+        font-size: 1em;
+        margin-top: 20px;
+        padding: 20px;
+        justify-content: center;
+        padding-left: 80px;
+    }
+
+
     .hebergementsMarseille {
         background-color: #F2F2F2;
         height: auto;
-        width: auto;
-        border-radius: 20px;
-        margin-bottom: 20px;
+        width: 990px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 	.hebergementsImages{
@@ -539,6 +560,10 @@ nav ul
         margin-bottom: 15px;
 	}
 
+    .infopopulaire{
+         margin-left: 0px;
+        
+    }
     .hebergementsPopulaires{
         background-color: #F2F2F2;
         height: auto;
@@ -566,28 +591,29 @@ nav ul
         
     }
 
-    /* Activités Marseille */
+    /* Activités Marseille*/ 
 	.activitesMarseille{
 		display: flex;
 		flex-flow: row wrap;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-	}
-
-	.box-img-activites{
-		display: flex;
-		flex-flow: row wrap;
-		flex-direction: row;
-	   
     }
-    
-    
+    .box-img-activites-imglarge{
+        height: 300px;
+        width: 270px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        justify-content: center;
+    }
 
-    /* footer */
+
+    /* footer*/ 
 
 	.footer{
-		display: flex;
+        display: flex;
+        justify-content: center;
 		flex-flow: row wrap;
 		position: relative;
 		height: 200%;
@@ -597,8 +623,7 @@ nav ul
 		bottom: 0px;
 		width: 100%;
 		font-family: 'Raleway', sans-serif;
-	}
-
-
+    }
+    
 
 }
