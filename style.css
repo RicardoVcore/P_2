@@ -283,6 +283,7 @@ nav ul
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 0%);
 }
 .details{
     margin: 10px;
@@ -357,6 +358,7 @@ nav ul
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 0%);
     
 }
 .box-img-populaires .detailsPopulaires{
@@ -389,6 +391,8 @@ nav ul
 .box-img-activites{
     border-radius: 20px;
     border: 1px solid #F2F2F2;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 0%);
+
    
 }
 
@@ -396,6 +400,8 @@ nav ul
     border-radius: 20px;
     border: 1px solid #F2F2F2;
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 0%);
+
 }
 
 .box-img-activites-imglarge{
@@ -483,10 +489,23 @@ nav ul
 	{
 	display: flex;
 	flex-flow: row wrap;
-	flex-direction: row;
+    flex-direction: row;
+    align-items: flex-start;
 	list-style: none;
 	
-	}
+    }
+    
+    #nav-items{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    #nav-items ul {
+        display: flex;
+        flex-wrap: initial;
+        gap: 30px;
+    }
 
 	.filtres{
 		display: flex;
@@ -530,10 +549,16 @@ nav ul
 		flex-flow: row wrap-reverse;
 		flex-direction: row;
         justify-content: center;
-        
-		
-	
     }
+    .hebergementsImages img{
+        height: 130px;
+        width: 320px;
+        object-fit: cover;
+    
+    }
+
+
+
     .activites{
         justify-content: center;
     }
@@ -542,7 +567,7 @@ nav ul
         margin-top: 20px;
         padding: 20px;
         justify-content: center;
-        padding-left: 80px;
+        padding-left: 15px;
     }
 
 
@@ -592,6 +617,10 @@ nav ul
     }
 
     /* Activités Marseille*/ 
+    .activites h3 {
+        font-size: 1em;
+        margin-left: 20px;
+    }
 	.activitesMarseille{
 		display: flex;
 		flex-flow: row wrap;
@@ -600,12 +629,23 @@ nav ul
 		align-items: center;
     }
     .box-img-activites-imglarge{
-        height: 300px;
-        width: 270px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        height: 170px;
+        width: 350px;
         object-fit: cover;
         justify-content: center;
+    }
+    .box-img-activites-imgsmedium{
+        height: 170px;
+        width: 350px;
+        object-fit: cover;
+        
+    }
+    
+    .box-img-activites-imgsmall{
+        height: 170px;
+        width: 350px;
+        object-fit: cover;
+        
     }
 
 
