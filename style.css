@@ -466,7 +466,7 @@ html{
     justify-content: space-between;
   
 }
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 375px) {
     body header, main {
       margin: 30px;
     }
