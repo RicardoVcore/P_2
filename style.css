@@ -540,5 +540,8 @@ html{
         font-weight: 900;
         font-size: 1.5em;
     }
+    .hebergementsPopulaires {
+        width: 100%;
+    }
     
   }
